@@ -1,16 +1,42 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <html>
 	<head>
 		<title>Example Page</title>
 		<link rel="stylesheet" href="../Styles/example.css" />
 	</head>
 	<body>
+		<noscript>Please enable javascript.</noscript>
 		I am a test body. This is the second sentence.
 		<ol>
-			<li>
-				I am a line!</li>
-			<li>
-				I am also a line but more awesome!</li>
+			<li>I am a line!</li>
+			<li>I am also a line but more awesome!</li>
 		</ol>
+		<form>
+			<label for="my checkbox">Send Email?</label>
+			<input type="text" name="Username" />
+			<input type="password" name="Password" />
+			<input type="button" value="Hi" />
+			<input type="hidden" value="Secret" name="Code" />
+			<input type="checkbox" id="my checkbox" name="IsSendingEmail" checked="checked" disabled="disabled" />
+			<input name="RadioGroup" type="radio" checked="checked" />
+			<input name="RadioGroup" type="radio" />
+			<input type="file" name="ChosenFile" />
+			<select name="CatBreed">
+				<option value="0">Tabby</option>
+				<option value="1">Calico</option>
+				<option value="2">Russian Blue</option>
+				<option value="-1" selected="selected">Choose a kitty!</option>
+			</select>
+			<select multiple="multiple" name="SizePreference">
+				<option value="0">Small</option>
+				<option value="1">Medium</option>
+				<option value="2">Large</option>
+			</select>
+			<textarea name="Poem" id="poem" rows="15" cols="22">Insert poem here...</textarea>
+			<input type="submit" value="Send" />
+		</form>
+		<script src="../Scripts/jquery-1.10.2.js"></script>
+		<script src="../Scripts/example.js"></script>
 	</body>
 </html>
